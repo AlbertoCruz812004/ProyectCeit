@@ -31,3 +31,106 @@ h2,
 h3 {
     font-family: 'Poppins';
 }
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    padding: 0.5rem 1rem;
+    z-index: 2;
+
+    .logo-name {
+        display: flex;
+        gap: 0.5rem;
+
+        img {
+            height: 2.5rem;
+            width: 2.5rem;
+        }
+
+        p {
+            font-family: 'Poppins';
+            font-size: 1.5rem;
+            color: #fff;
+        }
+    }
+
+    nav {
+        #btn-menu {
+            display: none;
+        }
+
+        #btn-menu:checked+ul {
+            height: calc(100svh - 5svh);
+            padding-bottom: 5rem;
+        }
+
+        ul {
+            transition: all 0.5s;
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            list-style: none;
+            top: 60px;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            justify-content: center;
+            height: 0;
+            overflow: hidden;
+            gap: 3rem;
+            text-align: center;
+
+            li {
+                font-family: 'Almarai';
+                color: #fff;
+                font-size: 1.5rem;
+                cursor: pointer;
+
+                #building {
+                    transform: translateY(5px);
+                }
+            }
+        }
+    }
+
+    .social-media {
+        display: none;
+    }
+}
+
+@media(min-width: 1024px) {
+    header {
+        nav ul {
+            flex-direction: row;
+            position: static;
+            overflow: visible;
+
+            li {
+                display: flex;
+                align-items: center;
+                font-size: 0.8rem;
+                gap: 1rem;
+
+                #building {
+                    transform: translateY(-1px);
+                }
+            }
+        }
+
+        .label-menu {
+            display: none;
+        }
+
+        .social-media {
+            display: flex;
+            justify-content: space-evenly;
+            gap: 1.5rem;
+            width: 200px;
+        }
+    }
+}
