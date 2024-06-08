@@ -11,7 +11,7 @@ main {
     place-items: center;
     background-image: url('../images/alumnos/background.png');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 80%;
     background-position: center;
     background-color: #0c0c94;
 
@@ -65,7 +65,7 @@ main {
                 input {
                     border: none;
                     background-color: rgba(0, 0, 0, 0);
-                    font-family: 'DMsans    ';
+                    font-family: 'DMsans';
                     font-weight: 400;
                     width: 80%
                 }
@@ -103,6 +103,36 @@ main {
             font-family: 'Almarai';
             font-size: 0.9rem;
             color: #e2dddd;
+            cursor: pointer;
+        }
+    }
+}
+
+@media(min-width: 768px) {
+    main .login {
+        width: 60%;
+
+        .container .input {
+            height: 15%;
+        }
+
+        a {
+            font-size: 1em;
+        }
+    }
+}
+
+@media(min-width: 1024px) {
+    main .login {
+        width: 30%;
+        height: 80%;
+
+        .container .input {
+            height: 20%;
+        }
+
+        a {
+            font-size: 0.8em;
         }
     }
 }
