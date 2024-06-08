@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url(../fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Almarai';
+    src: url(../fonts/Almarai-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'DMsans';
+    src: url(../fonts/DMSans_18pt-Medium.ttf);
+}
+
+.glass-effect {
+    background: #1616167c;
+    backdrop-filter: blur(0.4rem);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Poppins';
+}
