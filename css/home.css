@@ -31,7 +31,7 @@ header {
         }
 
         #btn-menu:checked+ul {
-            height: calc(100svh - 35svh);
+            height: calc(100svh - 10svh);
             padding-bottom: 5rem;
         }
 
