@@ -3,7 +3,7 @@
 function connect_to_supabase()
 {
     $host = 'host=aws-0-us-west-1.pooler.supabase.com';
-    $port = '6543'; // Puerto de PostgreSQL por defecto
+    $port = '6543';
     $dbname = 'dbname=postgres';
     $user = 'user=postgres.fxomtvykfqicinoxtmjp';
     $password = 'febrero2@81';
