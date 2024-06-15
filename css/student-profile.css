@@ -1,0 +1,31 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .info-student {
+        display: flex;
+        align-items: center;
+
+        figure {
+            border: 3px solid #000;
+            border-radius: 100%;
+            width: 80px;
+            height: 80px;
+            background-image: url('../images/student-profile/images.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+
+    .table-of-qualifications {
+        thead th {
+            padding: 0.5rem;
+        }
+
+        tbody tr td {
+            text-align: center;
+        }
+    }
+}

@@ -19,7 +19,7 @@ main {
     .login {
         width: 90%;
         height: 70%;
-        background: #13111142;
+        background: #18171785;
         backdrop-filter: blur(0.4rem);
         -webkit-backdrop-filter: blur(0.8rem);
         display: flex;
