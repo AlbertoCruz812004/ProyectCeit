@@ -1,18 +1,14 @@
 <?php
 
-function connect_to_supabase()
+function connectToDatabase()
 {
-    $host = 'host=aws-0-us-west-1.pooler.supabase.com';
-    $port = '6543';
-    $dbname = 'dbname=postgres';
-    $user = 'user=postgres.fxomtvykfqicinoxtmjp';
-    $password = 'febrero2@81';
+    $host = "host=aws-0-us-west-1.pooler.supabase.com";
+    $dbName = "postgres";
+    $userName = "postgres.fxomtvykfqicinoxtmjp";
+    $password = "febrero2@81";
 
-    $conn = pg_connect("host=$host port=$port dbname=$dbname user=$user password=$password");
-
-    if (!$conn) {
-        die("Error al conectar a la base de datos: " . pg_last_error());
+    try {
+        $conn = new PDO("pgslq:host= $host; dbname=$dbName; $userName, $password");
+    } catch (\Throwable $th) {
     }
-
-    return $conn;
 }
