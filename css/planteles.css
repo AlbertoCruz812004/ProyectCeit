@@ -34,38 +34,62 @@ main {
         display: flex;
         flex-direction: column;
         gap: 1.5rem;
-        padding: 5rem 1.5rem;
+        padding: 5rem 1.7rem;
         align-items: center;
         justify-content: center;
-        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.10) 40%, rgba(0, 0, 0, 0.19)), url('../images/home/background.jpg');
-
-        width: 100%;
-        height: 100svh;
-
-        h1,
-        p {
-            color: #fafafa;
-        }
 
         h1 {
-            font-size: 2.5rem;
+            font-size: 3.5rem;
         }
 
         p {
-            font-family: 'DMsans';
-            text-align: center;
+            font-size: 1.5rem;
         }
 
         img {
-            width: 80%;
+            width: 60%;
+        }
+    }
+}
+
+@media(min-width: 1024px) {
+    main {
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.50) 40%, rgba(0, 0, 0, 0.50)), url('../images/Planteles/backgrund-plantel.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: grid;
+        align-content: center;
+        grid-template-columns: 40% 40%;
+        grid-template-rows: 40% 40%;
+        gap: 0 2.5rem;
+        grid-template-areas:
+            "title hero-image"
+            "content hero-image";
+
+        .title {
+            grid-area: title;
+            text-align: center;
+            font-size: max(3.5vw, 2em, 2rem);
+        }
+
+        .content {
+            grid-area: content;
+            font-size: max(min(0.7vw, 0.7em), 1.2rem);
+        }
+
+        .hero-image {
+            grid-area: hero-image;
+            width: max(20vw, 200px);
         }
     }
 }
 
 section {
     width: 100%;
-    min-height: 50svh;
-    padding: 3rem 1.5rem 1rem;
+    min-height: 40svh;
+    max-height: 70svh;
+    padding: 3rem 1.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -80,6 +104,7 @@ section {
             display: flex;
             flex-wrap: wrap;
             align-items: center;
+            justify-content: center;
             gap: 1.5rem;
 
             button {
@@ -114,3 +139,11 @@ section {
         }
     }
 }
+
+/* @media(min-width: 1024px) {
+    section {
+        .container .group-button {
+            justify-content: center;
+        }
+    }
+} */
